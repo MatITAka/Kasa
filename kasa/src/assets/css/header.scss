@@ -1,0 +1,63 @@
+@import "general.scss";
+
+
+nav {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    & img{
+        width:10%;
+        margin-left: 50px;}
+
+    & li{
+        list-style: none;
+
+       && a{
+            color: $primary-color;
+            text-decoration: none;
+        }
+
+       && :hover{
+            text-decoration: underline;
+        }
+    }
+
+   & ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 100px;
+        margin-right: 60px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 900px) {
+    nav {
+       width: 89%;
+       margin-bottom: 10px;
+    }
+    nav img {
+       width: 145px;
+       height: 46.88px;
+    }
+    nav a {
+       align-items: center;
+       width: 100%;
+       font-size: 12px;
+       justify-content: space-between;
+       gap: 10%;
+       padding-left: 0;
+    }
+
+    .mediaQ_link{
+       width: 60px;
+    }
+
+
+
+ }
+
+

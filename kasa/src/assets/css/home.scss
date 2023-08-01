@@ -1,0 +1,93 @@
+body{
+    font-family: "Montserrat";
+}
+
+.img_display {
+    display: flex;
+    justify-content: center;
+
+    .overlay {
+        opacity: 0.9;
+        width: 95%;
+    }
+
+    & h1{
+        background-image: url(IMAGES/IMG.png);
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-radius: 20px;
+        color: white;
+    }
+}
+
+
+.hebergements{
+    background-color:#F6F6F6;
+    display: flex;
+    margin-top: 30px;
+    width: 85%;
+    justify-content: center;
+    margin-left: 80px;
+    height:75%;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.gallery{
+    margin-top: 30px;
+    width:90%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 20px;
+}
+
+.card{
+    color: white;
+    width: 80%;
+    height: 200px;
+    background-color: #FF6060;
+    border-radius: 10px;
+
+   & p{
+        margin-top:160px;
+        margin-left: 10px; 
+    }
+
+   & a{
+        text-decoration: none;
+        color: #F6F6F6;
+    }
+    
+}
+
+
+
+// @media (min-width :300px) and (max-width : 758px){ 
+
+
+// nav img{
+//     width:20%;
+// }
+
+// .img_display img{
+//     height: 100px;
+// }
+
+// .img_display h1{
+//     font-size: 15px;
+// }
+
+// .hebergements {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+// }
+
+
+
+
+// } 
