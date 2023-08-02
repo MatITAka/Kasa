@@ -1,0 +1,40 @@
+.hebergements{
+    background-color:#F6F6F6;
+    display: flex;
+    margin-top: 30px;
+    width: 85%;
+    justify-content: center;
+    margin-left: 80px;
+    height:75%;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.gallery{
+    margin-top: 30px;
+    width:90%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 20px;
+}
+
+.card{
+    color: white;
+    width: 80%;
+    height: 200px;
+    background-color: #FF6060;
+    border-radius: 10px;
+
+   & p{
+        margin-top:160px;
+        margin-left: 10px; 
+    }
+
+   & a{
+        text-decoration: none;
+        color: #F6F6F6;
+    }
+    
+}

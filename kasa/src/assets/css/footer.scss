@@ -11,11 +11,11 @@ footer{
     flex-direction: column;
     padding-top: 30px;
 
-   && p {
+        & p {
         color: white;
     }
 
-    && img{
+        & img{
         width: 10%;
     }
 
