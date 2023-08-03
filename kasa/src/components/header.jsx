@@ -7,8 +7,8 @@ function Header() {
                 
         <img src={logoImg} alt ="aa"/>
             <ul>
-              <li><a href="#"> Accueil</a> </li>
-              <li className="mediaQ_link"> <a href="#">A propos</a></li>
+              <li><a href="home"> Accueil</a> </li>
+              <li className="mediaQ_link"> <a href="about">A propos</a></li>
             </ul>
       
       </nav>

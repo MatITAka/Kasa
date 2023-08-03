@@ -1,53 +1,44 @@
- 
+ import '../assets/css/card.scss'
  function Card() {
 
-       return (
+return (
 
-              <>
+<>
 
-              Hello Card
+       <section className="hebergements">
 
-              </>
+              <div className="gallery">
+
+                     <article className="card">
+                     <a href="hebergements"> <p>Titre de la location</p></a>
+                     </article>
+                     <article class="card">
+                     <a href="hebergements"> <p>Titre de la location</p></a>
+                     </article>
+                     <article className="card">
+                     <a href="hebergements"> <p>Titre de la location</p></a>
+                     </article>
+                     <article className="card">
+                     <a href="hebergements"> <p>Titre de la location</p></a>
+                     </article>
+                     <article className="card">
+                     <a href="hebergements"> <p>Titre de la location</p></a>
+                     </article>
+                     <article className="card">
+                     <a href="hebergements"> <p>Titre de la location</p></a>
+                     </article>
+
+              </div>
+
+
+       "</section>
 
 
 
 
+</>
 
-       );
+);
  }
  
  export default Card;
- 
- 
- 
- 
- 
- 
- 
- // <section class="hebergements">
-
-        //     <div class="gallery">
-
-        //         <article class="card">
-        //            <a href="hebergements.html"> <p>Titre de la <br> location</p></a>
-        //         </article>
-        //         <article class="card">
-        //             <a href="hebergements.html"> <p>Titre de la <br> location</p></a>
-        //         </article>
-        //         <article class="card">
-        //             <a href="hebergements.html"> <p>Titre de la <br>location</p></a>
-        //         </article>
-        //         <article class="card">
-        //             <a href="hebergements.html"> <p>Titre de la <br>location</p></a>
-        //         </article>
-        //         <article class="card">
-        //             <a href="hebergements.html"> <p>Titre de la <br>location</p> </p></a>
-        //         </article>
-        //         <article class="card">
-        //             <a href="hebergements.html"> <p>Titre de la <br> location</p></a>
-        //         </article>
-
-        //     </div>
-
-
-        // </section>
