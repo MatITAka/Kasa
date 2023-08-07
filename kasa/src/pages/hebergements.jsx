@@ -56,9 +56,9 @@ function Hebergements() {
     </div>
 
 
-    <section class="flex-container">
+    <section class="flex-container-hebergements">
 
-        <div class="collapse-container-text">
+        <div class="collapse-container-hebergements">
         <div class="collapse-container">
             <p>Fiabilité</p>
             <i id="icon1" class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>
@@ -72,7 +72,7 @@ function Hebergements() {
     
         </div>
 
-        <div class="collapse-container-text">
+        <div class="collapse-container-hebergements">
 
         <div class="collapse-container">
             <p>Fiabilité</p>

@@ -8,6 +8,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Data from './data/data.json';
 
+
 import './assets/css/general.scss'
 
 

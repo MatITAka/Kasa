@@ -19,6 +19,12 @@ footer{
         width: 10%;
     }
 
+    .footer_text {
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+
 
 }
 

@@ -1,5 +1,6 @@
 import Card from "../components/card";
 import homeBannerImg from "../assets/images/homeBannerImg.png"; 
+import Data from '../data/data.json';
 
 
 function Home() {
@@ -14,7 +15,7 @@ function Home() {
 
       
       
-      < Card />
+      < Card data ={Data}/>
 
       </>
     );

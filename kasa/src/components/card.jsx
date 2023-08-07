@@ -12,26 +12,11 @@ return (
                      <article className="card">
                      <a href="hebergements"> <p>Titre de la location</p></a>
                      </article>
-                     <article class="card">
-                     <a href="hebergements"> <p>Titre de la location</p></a>
-                     </article>
-                     <article className="card">
-                     <a href="hebergements"> <p>Titre de la location</p></a>
-                     </article>
-                     <article className="card">
-                     <a href="hebergements"> <p>Titre de la location</p></a>
-                     </article>
-                     <article className="card">
-                     <a href="hebergements"> <p>Titre de la location</p></a>
-                     </article>
-                     <article className="card">
-                     <a href="hebergements"> <p>Titre de la location</p></a>
-                     </article>
-
+                     
               </div>
 
 
-       "</section>
+       </section>
 
 
 
