@@ -6,7 +6,6 @@ import About from './pages/about';
 import Hebergements from './pages/hebergements';
 import Header from './components/header';
 import Footer from './components/footer';
-import Data from './data/data.json';
 
 
 import './assets/css/general.scss'
@@ -22,7 +21,7 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/home" element={<Home />}/>
             <Route path="/about" element={<About/>}/>
-            <Route path="/hebergements/:id" element={<Hebergements data = {Data}/>}/>
+            <Route path="/hebergements/:id" element={<Hebergements/>}/>
             {/* Tout les root non disponible */}
             <Route path="*" element={<Err404 />}/>
           </Routes>

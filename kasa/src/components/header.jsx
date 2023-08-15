@@ -1,5 +1,6 @@
 
 import logoImg from '../assets/images/LogoHeader.png' ;
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
@@ -7,8 +8,10 @@ function Header() {
                 
         <img src={logoImg} alt ="aa"/>
             <ul>
-              <li><a href="home"> Accueil</a> </li>
-              <li className="mediaQ_link"> <a href="about">A propos</a></li>
+            <Link to={"/Home/"}> <li>Accueil</li>
+            </Link>
+            <Link to={'/about/'}> <li className="mediaQ_link">A propos</li>
+            </Link>
             </ul>
       
       </nav>

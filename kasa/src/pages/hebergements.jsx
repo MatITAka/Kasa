@@ -1,37 +1,23 @@
+import Slider from ""
+
+
+
+
+
 function Hebergements() {
     return (
-     <> Hello Hebergements
-     
-     
-     
-     {/* <div class="img_hebergements"> 
-            
-            <div class="img_selected">
-                <img src="IMAGES/Image source 2.png">
-            </div>
+     <> 
+
+        < Slider />
 
 
-           <div class="img_slider">
-
-            <div class="arrow-left">
-                <img src="IMAGES/arrow_back_ios-24px 1.png">
-            </div>
-
-            <div class="arrow-right">
-                <img src="IMAGES/arrow_forward_ios-24px 1.png">
-            </div>
-            
-            </div>
-
-        </div>
-       
         <div class="flex-proprietaire">
         
             <h1>Cozy Loft on the Canal Saint Martin</h1>
         
             <figure class="host_profile">
-                <p>Alexandre <br>Dumas</p>
-                <img src="IMAGES/Host.png">
+                <p>Alexandre <br/>Dumas</p>
+                <img src="IMAGES/Host.png" alt="aa"/>
             </figure>
         
         </div>
@@ -41,9 +27,9 @@ function Hebergements() {
     <div class="flex-btn-star">
         
         <div class="flex-buttons">
-        <button>Cozy</button>
-        <button>Canal</button>
-        <button>Paris 10</button>
+        <button></button>
+        <button></button>
+        <button></button>
         </div>
 
         <div class="flex-stars">
@@ -61,7 +47,7 @@ function Hebergements() {
         <div class="collapse-container-hebergements">
         <div class="collapse-container">
             <p>Fiabilité</p>
-            <i id="icon1" class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>
+            <i id="icon1" class="fa-solid fa-chevron-up"></i>
 
         </div>
 
@@ -76,7 +62,7 @@ function Hebergements() {
 
         <div class="collapse-container">
             <p>Fiabilité</p>
-            <i id="icon1" class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>
+            <i id="icon1" class="fa-solid fa-chevron-up"></i>
 
         </div>
 
@@ -89,7 +75,7 @@ function Hebergements() {
 
     </section>
      
-      */}
+     
      
      
      
