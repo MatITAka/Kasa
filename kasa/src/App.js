@@ -15,8 +15,9 @@ import './assets/css/general.scss'
 function App() {
   return (
     <>
-      <Header />
-        <BrowserRouter>        
+      
+        <BrowserRouter>
+        <Header />     
           <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/home" element={<Home />}/>
@@ -25,8 +26,9 @@ function App() {
             {/* Tout les root non disponible */}
             <Route path="*" element={<Err404 />}/>
           </Routes>
+          <Footer />
       </BrowserRouter>
-    <Footer />
+    
   </>
   );
 }
