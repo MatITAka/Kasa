@@ -1,4 +1,4 @@
-// import Slider from '../components/slider'
+import Slider from '../components/slider'
 
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
@@ -28,31 +28,30 @@ function Hebergements() {
         }
       });
   }, [navigate, params.id]);
-
-  const [firstName, lastName] = hebergement.host.name.split(' ');
-
+  
   return (
-
+    hebergement.id &&
     <>
-      {/* < Slider /> */}
+      < Slider />
 
-      <div class="flex-proprietaire">
-        <h1>{hebergement.title}</h1>
+      <div className="flex-proprietaire">
+        <h1 className ="hebergement_title">{hebergement.title}</h1>
 
-        <figure class="host_profile">
-          <p>
-
-            {firstName} <br/> {lastName} 
+        <figure className="host_profile">
+            <p>
+           {hebergement.host.name.split(' ')}
           </p>
           <img src={hebergement.host.picture} alt="aa" />
         </figure>
       </div>
 
 
-      <p class="localisation">{hebergement.location}</p>
+      <p className="localisation">
+        {hebergement.location}
+      </p>
 
-      <div class="flex-btn-star">
-      <div class="flex-buttons">
+      <div className="flex-btn-star">
+      <div className="flex-buttons">
         {hebergement.tags && hebergement.tags[0] && (
           <button>{hebergement.tags[0]}</button>
         )}
@@ -65,17 +64,16 @@ function Hebergements() {
       </div>
 
 
-
-        <div class="flex-stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+        <div className="flex-stars">
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
         </div>
       </div>
 
-      <section class="flex-container-hebergements">
+      <section className="flex-container-hebergements">
         <Collapse title="Description" content={hebergement.description} />
         <Collapse title="Equipements" content={hebergement.equipments} />
       </section>

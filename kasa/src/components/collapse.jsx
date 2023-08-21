@@ -9,7 +9,7 @@ function Collapse({ title, content }) {
 
   return (
     <>
-      <div className="collapse-container-about" onClick={() => handleToggle()}>
+      <div className="collapse" onClick={() => handleToggle()}>
         <p>{title}</p>
         <i
           id="icon"
@@ -18,7 +18,7 @@ function Collapse({ title, content }) {
       </div>
 
       {isOpen && (
-        <div className={`collapse-text ${isOpen ? "open" : ""}`}>
+        <div className= {`collapse-text ${isOpen ? "open" : "" }`}>
           {Array.isArray(content) ? (
             <ul>
               {content.map((element, i) => (

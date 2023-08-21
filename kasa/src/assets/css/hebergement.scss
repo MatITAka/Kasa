@@ -1,55 +1,13 @@
-.img_hebergements {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-
-    & img {
-        width: 90%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px;
-    }
-}
-
-
-
-.arrow-left{
-    position: absolute;
-    top:200px;
-    right: 80px;
-
-    & img {
-        height: 80px;
-    }
-}
-
-.arrow-right{
-    position: absolute;
-    top:200px;
-    right: 160px;
-
-    & img {
-        height: 80px;
-    }
-}
-
-.img_selected {
-    width:90%;
-}
-
-
-
-// h1{
-//     margin-left: 60px;
-//     color: #FF6060;
-//     margin-top: 30px;
-// }
-
 .flex-proprietaire{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.hebergement_title{
+    color: #FF6060;
+    margin-left:60px;
+    margin-bottom: -40px;
 }
 
 .host_profile {
@@ -60,13 +18,18 @@
 
     & img {
         object-fit: cover;
-        width: 100%;
+        width: 30%;
+        border-radius: 40px;
+        height: 60px;
     }
 
     & p {
         color: #FF6060;
+        font-display:inherit;
     }
 }
+
+
 
 .localisation {
     color: #FF6060;
@@ -85,8 +48,9 @@
         background-color: #FF6060;
         border-radius: 20px;
         border:1px transparent;
-        width: 80px;
+        width: 130px;
         height: 20px;
+        text-align: center;
     }
 
 }
@@ -94,6 +58,10 @@
 .fa-star{
     color: #E3E3E3;
     
+}
+
+.fa-star-selected {
+    color: #FF6060;
 }
 
 .flex-stars{
@@ -106,13 +74,6 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
-}
-
-
-.collapse-container-text{
-    display: flex;
-    flex-direction: column;
-    gap:30px;
 }
 
 .footer{
