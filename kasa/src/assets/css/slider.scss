@@ -12,11 +12,20 @@
     }
 }
 
+.img_slider {
+
+    & p {
+        color: white;
+        position: absolute;
+        right: 610px;
+        top: 330px;
+    }
+}
 
 .arrow-left{
     position: absolute;
     top:200px;
-    right: 80px;
+    right: 1120px;
 
     & img {
         height: 80px;
@@ -26,7 +35,7 @@
 .arrow-right{
     position: absolute;
     top:200px;
-    right: 1130px;
+    right: 80px;
 
     & img {
         height: 80px;

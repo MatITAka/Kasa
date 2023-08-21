@@ -3,6 +3,7 @@ import Slider from '../components/slider'
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Collapse from "../components/collapse";
+import StarRating from '../components/rating';
 
 function Hebergements() {
   const params = useParams();
@@ -39,7 +40,7 @@ function Hebergements() {
 
         <figure className="host_profile">
             <p>
-           {hebergement.host.name.split(' ')}
+           {hebergement.host.name}
           </p>
           <img src={hebergement.host.picture} alt="aa" />
         </figure>
@@ -65,11 +66,14 @@ function Hebergements() {
 
 
         <div className="flex-stars">
+
+
+        <StarRating rating={parseInt(hebergement.rating)} /> {/* Utilisation du composant StarRating */}
+          {/* <i className="fa-solid fa-star"></i>
           <i className="fa-solid fa-star"></i>
           <i className="fa-solid fa-star"></i>
           <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i> */}
         </div>
       </div>
 
