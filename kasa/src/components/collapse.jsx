@@ -9,11 +9,12 @@ function Collapse({ title, content }) {
 
   return (
     <>
+      <div className="collapse-container">
       <div className="collapse" onClick={() => handleToggle()}>
         <p>{title}</p>
         <i
           id="icon"
-          className={`fa-solid fa-chevron-${isOpen ? "up" : "down"}`}
+          className={`fa-solid fa-chevron-${isOpen ? "down" : "up"}`}
         ></i>
       </div>
 
@@ -30,6 +31,7 @@ function Collapse({ title, content }) {
           )}
         </div>
       )}
+    </div>
     </>
   );
 }

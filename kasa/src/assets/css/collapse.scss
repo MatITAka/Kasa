@@ -4,6 +4,7 @@ $height-open: 500px;
 $height-closed: 0;
 
 
+
 .flex-container-hebergements{
     display: flex;
     flex-direction: row;
@@ -11,30 +12,41 @@ $height-closed: 0;
     align-items: center;
     gap: 30px;
 
+
+    & .collapse-container {
+
+        display: flex;
+        flex-direction: column;
+        width:80%;
+    }
+    
+
     & .collapse {
 
-        width: 45%;
+        width: 80%;
         color:white;
         background-color: #FF6060;
-        gap:30px;
+        gap:10px;
         border-radius: 10px;
         display: flex;
         flex-direction:row;
         justify-content: space-between;
         align-items: center;
-    
+        margin-left: 50px;
+        
         & i {
             margin-right: 10px;
         }
     
         & p {
             margin-left :10px;
+           
         }
     }
 
     & .collapse-text{
         width:80%;
-        margin-top: -40px;
+        margin-left: 50px;
         color:$primary-color; 
         background-color: $secondary-color;
         border-bottom-left-radius: 10px;
@@ -43,7 +55,6 @@ $height-closed: 0;
         flex-direction: column;
         max-height: $height-closed;
         overflow: hidden;
-        transition: max-height 0.3s ease;
 
         & p{
             margin-left: 20px; 
@@ -64,9 +75,16 @@ $height-closed: 0;
     align-items: center;
     gap: 30px;
 
-    .collapse {
+    &  .collapse-container {
 
-        width: 80%;
+        display: flex;
+        flex-direction: column;
+        width:80%;
+    }
+
+    & .collapse {
+
+        width: 100%;
         color:white;
         background-color: #FF6060;
         gap:30px;
@@ -75,6 +93,7 @@ $height-closed: 0;
         flex-direction:row;
         justify-content: space-between;
         align-items: center;
+        transition: max-height 0.3s ease;
     
         & i {
             margin-right: 10px;
@@ -86,8 +105,8 @@ $height-closed: 0;
     }
 
     & .collapse-text{
-        width:80%;
-        margin-top: -40px;
+        width:100%;
+        margin-top: 0px;
         color:$primary-color; 
         background-color: $secondary-color;
         border-bottom-left-radius: 10px;
@@ -96,16 +115,45 @@ $height-closed: 0;
         flex-direction: column;
         max-height: $height-closed;
         overflow: hidden;
-        transition: max-height 0.3s ease;
 
         & p{
             margin-left: 20px; 
         }
 
-    &.collapse-text.open {
+        &.collapse-text.open {
             max-height: $height-open;
+           
     }
         
     }
     
+}
+
+@media screen and (min-width: 320px) and (max-width: 900px) { 
+
+
+    .flex-container-about{
+
+         & .collapse {
+            width: 100%;
+         }
+
+         & .collapse-text {
+            width: 100%;
+         }
+    }
+
+    .flex-container-hebergements {
+
+        flex-direction: column;
+        margin-left: -100px;
+
+        & .collapse {
+            width: 100%;
+        }
+
+        & .collapse-text {
+            width: 100%;
+        }
+    }
 }

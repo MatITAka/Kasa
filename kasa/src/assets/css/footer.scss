@@ -1,4 +1,4 @@
-footer{
+footer {
     margin-left: -8px;
    margin-right :-8px;
    margin-bottom: -10px;
@@ -29,3 +29,11 @@ footer{
 }
 
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 789px) {
+    
+    .footer_text {
+    display: block;
+    }
+ }

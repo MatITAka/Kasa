@@ -61,13 +61,13 @@ return (
       <img 
       onClick={goToPreviousSlide}
       
-      src={arrowLeft} alt="aa" />
+      src={arrowLeft} alt="arrow-left" />
     </div>
 
     <div className="arrow-right">
       <img
       onClick={goToNexSlide}
-      src={arrowRight} alt="aa" />
+      src={arrowRight} alt="arrow-right" />
     </div>
 
     <p>{hebergement.pictures && `${activeSlide + 1}/${hebergement.pictures.length}`}</p>

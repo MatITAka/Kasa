@@ -45,3 +45,35 @@
 .img_selected {
     width:90%;
 }
+
+@media screen and (min-width: 320px) and (max-width: 900px) { 
+
+.img_selected{
+
+    & img {
+        height: 200px;
+    }
+}
+
+.arrow-left {
+
+    right: 290px;
+    top : 170px;
+}
+
+.arrow-right {
+    right: 25px;
+    top : 170px;
+}
+
+.img_slider {
+
+    & p {
+            right: 160px;
+            top: 250px;
+
+    }
+}
+
+
+}

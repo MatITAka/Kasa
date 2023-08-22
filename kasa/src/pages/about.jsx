@@ -8,7 +8,7 @@ function About() {
  return (
     <>
       <div className="img_about">
-        <img src={aboutImg} alt="aa" />
+        <img src={aboutImg} alt="aboutImage" />
       </div>
 
       <section className="flex-container-about">

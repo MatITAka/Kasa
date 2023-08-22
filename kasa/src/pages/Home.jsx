@@ -24,7 +24,7 @@ function Home() {
   return (
     <>
       <div className="img_display">
-        <img src={homeBannerImg} alt="aa" />
+        <img src={homeBannerImg} alt="bannerImg" />
         <h1>Chez vous, partout et ailleurs</h1>
       </div>
       {dataList.length !== 0 && <Card dataList={dataList} />}

@@ -58,3 +58,25 @@
        
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 900px) {  
+
+.gallery {
+    display: flex;
+    flex-direction: column ;
+    margin-right: -30px;
+    margin-bottom: 20px;
+}
+
+
+.hebergements{
+   margin:0;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+
+
+
+
+
+}

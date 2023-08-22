@@ -42,7 +42,7 @@ function Hebergements() {
             <p>
            {hebergement.host.name}
           </p>
-          <img src={hebergement.host.picture} alt="aa" />
+          <img src={hebergement.host.picture} alt="hostpicture" />
         </figure>
       </div>
 
@@ -68,16 +68,13 @@ function Hebergements() {
         <div className="flex-stars">
 
 
-        <StarRating rating={parseInt(hebergement.rating)} /> {/* Utilisation du composant StarRating */}
-          {/* <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i> */}
+        <StarRating rating={parseInt(hebergement.rating)} />
         </div>
       </div>
 
       <section className="flex-container-hebergements">
+
+
         <Collapse title="Description" content={hebergement.description} />
         <Collapse title="Equipements" content={hebergement.equipments} />
       </section>
