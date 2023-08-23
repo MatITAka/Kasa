@@ -33,7 +33,8 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 789px) {
     
-    .footer_text {
-    display: block;
+    footer .footer .footer_text {
+        width: 40%;
+        margin-left: 25px;
     }
  }

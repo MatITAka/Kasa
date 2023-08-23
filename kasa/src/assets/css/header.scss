@@ -33,35 +33,6 @@ nav {
 
 }
 
-// @media screen and (min-width: 320px){
-
-
-//     nav {
-//        width: 89%;
-//        margin-bottom: 10px;
-
-//        & img {
-
-//         width: 90px;
-//        height: 46.88px;
-//        }
-
-//        & a {
-//         align-items: center;
-//         width: 100%;
-//         font-size: 12px;
-//         justify-content: space-between;
-//         gap: 10%;
-//         padding-left: 0;
-//        }
-
-//        & .mediaQ_link{
-//         width: 60px;
-//      }
- 
-//     }
-
-//  }
 
 @media screen and (min-width: 320px) and (max-width: 900px) {
     nav {
@@ -77,15 +48,15 @@ nav {
     nav ul {
        align-items: center;
        width: 100%;
-       font-size: 12px;
+       font-size: 10px;
        justify-content: flex-end;
-       gap: 30%;
+       gap: 20%;
        padding-left: 0;
+       margin-left: -10px;
     }
 
     .mediaQ_link{
-        display: flex;
-        flex-direction: row;
+        width: 100px;
     }
 
 }

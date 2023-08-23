@@ -19,7 +19,7 @@ function Collapse({ title, content }) {
       </div>
 
       {isOpen && (
-        <div className= {`collapse-text ${isOpen ? "open" : "" }`}>
+        <div className= {`collapse-text ${isOpen ? "open" : "closed" }`}>
           {Array.isArray(content) ? (
             <ul>
               {content.map((element, i) => (
