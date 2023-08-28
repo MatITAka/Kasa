@@ -2,6 +2,7 @@ $primary-color : #FF6060;
 $secondary-color : #F6F6F6;
 $height-open: 500px;
 $height-closed: 0;
+$height-mid-animation : 250px;
 
 @keyframes slideIn {
     from {
@@ -15,11 +16,17 @@ $height-closed: 0;
 }
 
 @keyframes slideOut {
-    from {
+    0% {
         max-height: $height-open;
         opacity: 1;
     }
-    to {
+
+    50% {
+        max-height: $height-mid-animation;
+        opacity : 0.5;
+    }
+
+    100% {
         max-height: $height-closed;
         opacity: 0;
     }
@@ -38,6 +45,7 @@ $height-closed: 0;
         display: flex;
         flex-direction: column;
         width:80%;
+
     }
     
 
@@ -53,6 +61,8 @@ $height-closed: 0;
         justify-content: space-between;
         align-items: center;
         margin-left: 50px;
+        
+
         
         & i {
             margin-right: 10px;
@@ -75,7 +85,7 @@ $height-closed: 0;
         flex-direction: column;
         max-height: $height-closed;
         overflow: hidden;
-        text-decoration: none;
+        
         & p{
             margin-left: 20px; 
         }
@@ -84,15 +94,15 @@ $height-closed: 0;
             list-style-type : none;
         }
 
-    &.collapse-text.open {
+        &.collapse-text.open {
             max-height: $height-open;
             animation: slideIn 0.7s ease forwards;
-    }
+        }
 
-    &.collapse-text-close {
+        &.collapse-text.closed {
             max-height: $height-closed;
-            animation : slideOut 0.7 ease forwards;
-    }
+            animation: slideOut 0.7s ease forwards;
+        }
         
     }
  
