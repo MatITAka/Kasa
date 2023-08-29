@@ -18,7 +18,7 @@ function Collapse({ title, content }) {
         ></i>
       </div>
 
-      {isOpen && (
+      
         <div className= {`collapse-text ${isOpen ? "open" : "closed" }`}>
           {Array.isArray(content) ? (
             <ul>
@@ -30,7 +30,6 @@ function Collapse({ title, content }) {
             <p>{content}</p>
           )}
         </div>
-      )}
     </div>
     </>
   );
