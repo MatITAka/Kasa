@@ -46,6 +46,14 @@
     width:90%;
 }
 
+.visible {
+    opacity: 1;
+    cursor: pointer;
+ }
+ .hide {
+    opacity: 0;
+}
+
 @media screen and (min-width: 320px) and (max-width: 900px) { 
 
 .img_selected{
@@ -77,3 +85,4 @@
 
 
 }
+

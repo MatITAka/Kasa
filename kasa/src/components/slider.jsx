@@ -6,8 +6,6 @@ import { useParams, useNavigate } from "react-router-dom";
 
 
 function Slider () {
-
-
   const [activeSlide, setActiveSlide] = useState(0);
 
 
@@ -57,28 +55,40 @@ return (
   </div>
  
   <div className="img_slider">
-    <div className="arrow-left">
-      <img 
-      onClick={goToPreviousSlide}
-      
-      src={arrowLeft} alt="arrow-left" />
-    </div>
+          {hebergement.pictures && hebergement.pictures.length > 1 && (
+            <>
+              <div className="arrow-left">
+                <img
+                  onClick={goToPreviousSlide}
+                  src={arrowLeft}
+                  alt="arrow-left"
+                />
+              </div>
 
-    <div className="arrow-right">
-      <img
-      onClick={goToNexSlide}
-      src={arrowRight} alt="arrow-right" />
-    </div>
+              <div className="arrow-right">
+                <img
+                  onClick={goToNexSlide}
+                  src={arrowRight}
+                  alt="arrow-right"
+                />
+              </div>
+            </>
+          )}
 
-    <p>{hebergement.pictures && `${activeSlide + 1}/${hebergement.pictures.length}`}</p>
+          {hebergement.pictures && hebergement.pictures.length > 1 && (
+            <p>
+              {hebergement.pictures && `${activeSlide + 1}/${hebergement.pictures.length}`}
+            </p>
+          )}
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Slider;
 
 
 
-  </div>
-</div>
 
-</>
-  
-)}
 
-export default Slider
